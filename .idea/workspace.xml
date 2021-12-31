@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="418f13fe-005f-488b-8d04-dee62cafeeae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +17,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="205383a3-7b72-4aa3-97fd-f6f3a784475f" />
+        <option name="url" value="https://github.com/Magistr23/Test.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectId" id="22xdrQ6yj0abGBTTNsYW3IEjdK8" />
   <component name="ProjectViewState">
@@ -87,6 +95,7 @@
       <workItem from="1640874602526" duration="3623000" />
       <workItem from="1640959324838" duration="605000" />
       <workItem from="1640980822385" duration="193000" />
+      <workItem from="1640988984340" duration="871000" />
     </task>
     <servers />
   </component>

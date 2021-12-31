@@ -9,5 +9,5 @@ function add ($userInput, &$textStorage) {
     $textStorage = (array_push($textStorage, $userInput));
 
 }/*var_dump($textStorage[0]['Title'], $textStorage[0]['Text']);*/
-/*var_dump($textStorage[0]);*/
+var_dump($userInput);
 print_r($textStorage[0]);
