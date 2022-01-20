@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="418f13fe-005f-488b-8d04-dee62cafeeae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/task1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task.php" beforeDir="false" afterPath="$PROJECT_DIR$/task.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +19,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
@@ -48,7 +51,7 @@
       <recent name="C:\Users\1111\Desktop" />
     </key>
   </component>
-  <component name="RunManager" selected="PHP Script.task.php">
+  <component name="RunManager" selected="PHP Script.task1.php">
     <configuration name="calculator.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/calculator.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
@@ -58,6 +61,14 @@
       <method v="2" />
     </configuration>
     <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration name="task1.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/task1.php">
       <CommandLine>
         <PhpTestInterpreterSettings>
           <option name="interpreterName" value="PHP" />
@@ -75,6 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.task1.php" />
         <item itemvalue="PHP Script.task.php" />
         <item itemvalue="PHP Script.index.php" />
         <item itemvalue="PHP Script.calculator.php" />
@@ -95,7 +107,34 @@
       <workItem from="1640874602526" duration="3623000" />
       <workItem from="1640959324838" duration="605000" />
       <workItem from="1640980822385" duration="193000" />
-      <workItem from="1640988984340" duration="871000" />
+      <workItem from="1640988984340" duration="1818000" />
+      <workItem from="1641051697057" duration="14000" />
+      <workItem from="1641156042522" duration="478000" />
+      <workItem from="1641220210831" duration="15000" />
+      <workItem from="1641220368954" duration="42000" />
+      <workItem from="1641221779795" duration="8270000" />
+      <workItem from="1641245248031" duration="44000" />
+      <workItem from="1641285510787" duration="387000" />
+      <workItem from="1641287556769" duration="702000" />
+      <workItem from="1641298693614" duration="3669000" />
+      <workItem from="1641325216340" duration="138000" />
+      <workItem from="1641485036687" duration="2288000" />
+      <workItem from="1641494135206" duration="3977000" />
+      <workItem from="1641582529939" duration="2821000" />
+      <workItem from="1641656431095" duration="544000" />
+      <workItem from="1641703085434" duration="38000" />
+      <workItem from="1641830039436" duration="7701000" />
+      <workItem from="1642011374016" duration="110000" />
+      <workItem from="1642020918710" duration="734000" />
+      <workItem from="1642094641980" duration="4661000" />
+      <workItem from="1642185662095" duration="1348000" />
+      <workItem from="1642416965588" duration="1192000" />
+      <workItem from="1642450721080" duration="561000" />
+      <workItem from="1642507570528" duration="6760000" />
+      <workItem from="1642522180011" duration="1035000" />
+      <workItem from="1642537433360" duration="264000" />
+      <workItem from="1642582752848" duration="10247000" />
+      <workItem from="1642664156647" duration="650000" />
     </task>
     <servers />
   </component>
