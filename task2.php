@@ -1,54 +1,90 @@
 <?php
-class TelegraphText
+include 'task1.php';
+abstract class Storage
 {
-    public $text;
+    abstract function create(TelegraphText $text);
+    abstract function read($slug);
+    abstract function update($slug, $title, $text);
+    abstract function delete($slug);
+    abstract function list();
 
-    public $title;
+}
+abstract class View
+{
+    public $Storage;
 
-    public $author;
-
-    public $published;
-
-    public $slug;
-
-    public function __construct()
+    public function __construct($Storage, $slug)
     {
-        $this->author = 'Владыка смерти';
-        $this->slug = 'test_text_file';
-        $this->published = date('r');
+        $this->Storage = $Storage;
+        $this->slug = $slug;
     }
 
-    public function storeText()
-    {
-        $data = [
-            'title' => $this->title,
-            'text' => $this->text,
-            'author' => $this->author,
-            'published' => $this->published
-        ];
-        file_put_contents($this->slug, serialize($data));
-    }
+    abstract public function displayTextById($id);
+    abstract public function displayTextByUrl($url);
 
-    public function loadText()
+}
+abstract class User
+{
+    protected $id;
+    protected $name;
+    protected $role;
+
+    abstract protected function getTextsToEdit();
+
+}
+class FileStorage extends Storage
+{
+    public function create(TelegraphText $text): string
     {
-        if (filesize($this->slug) > 0 ){
-            $data = unserialize(file_get_contents($this->slug));
-            $this->title = $data['title'];
-            $this->text = $data['text'];
-            $this->author = $data['author'];
-            $this->published = $data['published'];
+        $i = 1;
+        $fileName = $text->slug . '_' .  date('r');
+        while (file_exists($fileName)) {
+            $fileName = $text->slug . '_' . $i . '_' . date('r');
+            $i ++;
         }
-        return $this->text;
+        $text->slug = $fileName;
+        file_put_contents($fileName, serialize($text));
+        return $text->slug;
     }
 
-    public function editText($newTitle, $newText)
+    public function read($slug)
     {
-        $this->title = $newTitle;
-        $this->text = $newText;
+        if (file_exists($slug)) {
+            $data = file_get_contents($slug);
+            $arr = unserialize($data);
+            foreach ($arr as $value) {
+                echo $value . PHP_EOL;
+            }
+        }
+    }
+
+    public function update($slug, $title, $text)
+    {
+        if (file_exists($slug)) {
+            $data = file_get_contents($slug);
+            $arr = unserialize($data);
+            $arr['title'] = $title;
+            $arr['text'] = $text;
+            $arr['published'] = date('r');
+            file_put_contents($slug, serialize($arr));
+        }
+    }
+
+    public function delete($slug)
+    {
+        unlink($slug);
+    }
+
+    public function list(): array
+    {
+        $list = [];
+        $array = scandir(getcwd());
+        $array = array_slice($array, 2, null);
+            foreach ($array as $file) {
+                $list[] = $file;
+            } return $list;
     }
 }
-$telegraph = new TelegraphText();
-$telegraph->editText('Заголовок', 'Текст');
-$telegraph->storeText();
-$telegraph->loadText();
-print_r($telegraph);
+
+$crud = new FileStorage();
+$crud->update('test_text_file', '123','456');
